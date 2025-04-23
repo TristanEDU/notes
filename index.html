@@ -2,6 +2,39 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <title>📚 My Notes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable/dist/css/theme-simple.css">
+  <style>
+    :root {
+      --theme-color: #4CAF50;
+      --sidebar-background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Loading...</div>
+  <script>
+    window.$docsify = {
+      name: '📚 My Notes',
+      loadSidebar: true,
+      subMaxLevel: 3,
+      loadNavbar: false,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      auto2top: true,
+      sidebarDisplayLevel: 1,
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
   <title>My Notes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css">
