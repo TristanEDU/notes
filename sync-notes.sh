@@ -3,8 +3,16 @@
 cd ~/notes || exit
 
 # Update sidebar
-docsify-auto-sidebar --folder . --output ./_sidebar.md
+docsify-auto-sidebar --folder ~/notes --output ~/notes/_sidebar.md
 
+# Git add
 git add .
-git commit -m "Sync: $(date '+%Y-%m-%d %H:%M:%S')" 2>/dev/null
+
+# Only commit if there are staged changes
+git diff --cached --quiet || git commit -m "Sync: $(date '+%Y-%m-%d %H:%M:%S')"
+
+# Push to GitHub
 git push
+
+# Success message
+echo "✅ Notes synced and sidebar updated at $(date '+%H:%M:%S')"
