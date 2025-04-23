@@ -3,7 +3,7 @@
 cd ~/notes || exit
 
 # Update sidebar
-docsify-auto-sidebar --folder ~/notes --output ~/notes/_sidebar.md
+docsify-auto-sidebar --folder ~/notes --output ~/notes/_sidebar.md --config false
 
 # Git add
 git add .
