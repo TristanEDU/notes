@@ -3,8 +3,7 @@
 cd ~/notes || exit
 
 # Update sidebar
-DOCSIFY_SIDEBAR_DISABLE_DEFAULT_CONFIG=true \
-docsify-auto-sidebar --folder ~/notes --output ~/notes/_sidebar.md --config false
+bash ~/notes/generate-sidebar.sh
 
 # Git add
 git add .
