@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>📚 My Notes</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable/dist/css/theme-simple.css">
-  <style>
-    :root {
-      --theme-color: #4CAF50;
-      --sidebar-background: #f9f9f9;
-    }
-  </style>
-</head>
-<body>
-  <div id="app">Loading...</div>
-  <script>
-    window.$docsify = {
-      name: '📚 My Notes',
-      loadSidebar: true,
-      subMaxLevel: 3,
-      loadNavbar: false,
-      alias: {
-      '/.*/sidebar.md': '/sidebar.md'
+  <head>
+    <meta charset="UTF-8" />
+    <title>📚 My Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify-themeable/dist/css/theme-simple.css"
+    />
+    <style>
+      :root {
+        --theme-color: #4caf50;
+        --sidebar-background: #f9f9f9;
       }
-
-      auto2Top: true,
-      sidebarDisplayLevel: 1,
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-</body>
+    </style>
+  </head>
+  <body>
+    <div id="app">Loading...</div>
+    <script>
+      window.$docsify = {
+        name: "📚 My Notes",
+        loadSidebar: true,
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
+        },
+        subMaxLevel: 3,
+        loadNavbar: false,
+        auto2Top: true, <!-- ✅ THIS IS CORRECT -->
+        sidebarDisplayLevel: 1,
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  </body>
 </html>
