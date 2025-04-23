@@ -1,19 +1,19 @@
 # 📚 Notes Index
 
-- [README](README.md)
-- [Unbounce-nonnative-form-conversion](Unbounce-nonnative-form-conversion.md)
-- [markdown-cheatsheet](markdown-cheatsheet.md)
-- [test](test.md)
+- [README](README)
+- [Unbounce-nonnative-form-conversion](Unbounce-nonnative-form-conversion)
+- [markdown-cheatsheet](markdown-cheatsheet)
+- [test](test)
 - daily
-  - [2025-04-16](daily/2025-04-16.md)
-  - [README](daily/README.md)
+  - [2025-04-16](daily/2025-04-16)
+  - [README](daily/README)
 - ideas
-  - [README](ideas/README.md)
+  - [README](ideas/README)
 - jobs
-  - [README](jobs/README.md)
+  - [README](jobs/README)
 - projects
-  - [README](projects/README.md)
-  - [css-relitive-units](projects/css-relitive-units.md)
-  - [robot-face](projects/robot-face.md)
+  - [README](projects/README)
+  - [css-relitive-units](projects/css-relitive-units)
+  - [robot-face](projects/robot-face)
 - references
-  - [README](references/README.md)
+  - [README](references/README)
