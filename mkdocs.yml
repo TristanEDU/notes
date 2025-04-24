@@ -13,22 +13,14 @@ theme:
 
 nav:
   - Home: index.md
-  - Daily:
-      - 2025-04-16: daily/2025-04-16.md
-  - Ideas:
-      - README: ideas/README.md
-  - Jobs:
-      - README: jobs/README.md
-  - Projects:
-      - README: projects/README.md
-      - CSS Relative Units: projects/css-relitive-units.md
-      - Robot Face: projects/robot-face.md
-  - References:
-      - README: references/README.md
-  - Markdown Cheatsheet: markdown-cheatsheet.md
-
-
-# Add this to the end of mkdocs.yml
-repo_url: https://github.com/TristanEDU/notes
-repo_name: TristanEDU/notes
-edit_uri: ""
+  - 20250416: daily/2025-04-16.md
+  - README: daily/README.md
+  - README: ideas/README.md
+  - README: jobs/README.md
+  - MarkdownCheatsheet: markdown-cheatsheet.md
+  - README: projects/README.md
+  - CssRelitiveUnits: projects/css-relitive-units.md
+  - NewTestNote: projects/new-test-note.md
+  - RobotFace: projects/robot-face.md
+  - TestingAgain: projects/testing-again.md
+  - README: references/README.md

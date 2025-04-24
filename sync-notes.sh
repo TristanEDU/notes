@@ -2,6 +2,8 @@
 
 cd ~/notes || exit
 
+./update-nav.sh
+
 # Git add
 git add .
 
