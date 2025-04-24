@@ -18,9 +18,6 @@ nav:
   - README: ideas/README.md
   - README: jobs/README.md
   - MarkdownCheatsheet: markdown-cheatsheet.md
-  - README: projects/README.md
   - CssRelitiveUnits: projects/css-relitive-units.md
-  - NewTestNote: projects/new-test-note.md
   - RobotFace: projects/robot-face.md
-  - TestingAgain: projects/testing-again.md
   - README: references/README.md
