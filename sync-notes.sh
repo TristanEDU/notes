@@ -2,9 +2,6 @@
 
 cd ~/notes || exit
 
-# Update sidebar
-bash ~/notes/generate-sidebar.sh
-
 # Git add
 git add .
 
@@ -15,4 +12,4 @@ git diff --cached --quiet || git commit -m "Sync: $(date '+%Y-%m-%d %H:%M:%S')"
 git push
 
 # Success message
-echo "✅ Notes synced and sidebar updated at $(date '+%H:%M:%S')"
+echo "✅ Notes synced and updated at $(date '+%H:%M:%S')"
