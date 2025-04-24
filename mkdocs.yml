@@ -11,13 +11,19 @@ theme:
     - search.suggest
     - content.code.copy
 
+# This section will be automatically updated by update-nav.sh
 nav:
-  - Home: index.md
-  - 20250416: daily/2025-04-16.md
-  - README: daily/README.md
-  - README: ideas/README.md
-  - README: jobs/README.md
-  - MarkdownCheatsheet: markdown-cheatsheet.md
-  - CssRelitiveUnits: projects/css-relitive-units.md
-  - RobotFace: projects/robot-face.md
-  - README: references/README.md
+  - Daily:
+    - 2025 04 16: daily/2025-04-16.md
+    - README: daily/README.md
+  - Ideas:
+    - README: ideas/README.md
+  - Jobs:
+    - README: jobs/README.md
+  - Projects:
+    - Css relitive units: projects/css-relitive-units.md
+    - Robot face: projects/robot-face.md
+  - References:
+    - README: references/README.md
+  - Index: index.md
+  - Markdown cheatsheet: markdown-cheatsheet.md

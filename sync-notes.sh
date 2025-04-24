@@ -1,17 +1,22 @@
 #!/bin/bash
 
-cd ~/notes || exit
+# Exit on any error
+set -e
 
+# Format time
+NOW=$(date "+%Y-%m-%d %H:%M:%S")
+
+# Add/update nav before syncing
 ./update-nav.sh
 
-# Git add
+# Add all changes
+echo "🔄 Committing changes..."
 git add .
-
-# Only commit if there are staged changes
-git diff --cached --quiet || git commit -m "Sync: $(date '+%Y-%m-%d %H:%M:%S')"
+git commit -m "Sync: $NOW" || echo "⚠️ No changes to commit."
 
 # Push to GitHub
+echo "🚀 Pushing to GitHub..."
 git push
 
-# Success message
-echo "✅ Notes synced and updated at $(date '+%H:%M:%S')"
+# Done
+echo "✅ Notes synced and updated at $(date +"%H:%M:%S")"

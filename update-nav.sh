@@ -1,25 +1,38 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-cd "$(dirname "$0")" || exit 1
+set -e
 
-echo "site_name: My Notes" > mkdocs.yml
-echo "theme:" >> mkdocs.yml
-echo "  name: material" >> mkdocs.yml
-echo "  palette:" >> mkdocs.yml
-echo "    scheme: slate" >> mkdocs.yml
-echo "  features:" >> mkdocs.yml
-echo "    - navigation.sections" >> mkdocs.yml
-echo "    - navigation.top" >> mkdocs.yml
-echo "    - navigation.expand" >> mkdocs.yml
-echo "    - toc.integrate" >> mkdocs.yml
-echo "    - search.suggest" >> mkdocs.yml
-echo "    - content.code.copy" >> mkdocs.yml
-echo "" >> mkdocs.yml
-echo "nav:" >> mkdocs.yml
-echo "  - Home: index.md" >> mkdocs.yml
+generate_nav() {
+    local indent="$1"
+    local path="$2"
 
-find docs -name "*.md" | grep -v "index.md" | sort | while read -r file; do
-  name=$(basename "$file" .md | sed -E 's/-/ /g' | sed -E 's/(^| )(\w)/\U\2/g')
-  relpath=$(realpath --relative-to=docs "$file")
-  echo "  - $name: $relpath" >> mkdocs.yml
-done
+    # Loop through folders first
+    for dir in $(find "$path" -mindepth 1 -type d | sort); do
+        local relpath="${dir#docs/}"
+        local name="$(basename "$relpath")"
+        local title="${name//-/ }"
+        echo "${indent}- ${title^}:"
+        generate_nav "  $indent" "$dir"
+    done
+
+    # Then add markdown files in the current folder
+    for file in "$path"/*.md; do
+        [ -e "$file" ] || continue
+        local relpath="${file#docs/}"
+        local name="$(basename "$file" .md)"
+        local title="${name//-/ }"
+        echo "${indent}- ${title^}: $relpath"
+    done
+}
+
+# Write to mkdocs.yml, preserving top settings
+head -n 20 mkdocs.yml | grep -v "^nav:" > mkdocs.yml.tmp
+
+# Append updated nav
+echo "nav:" >> mkdocs.yml.tmp
+generate_nav "  " "docs" >> mkdocs.yml.tmp
+
+# Replace old file
+mv mkdocs.yml.tmp mkdocs.yml
+
+echo "✅ mkdocs.yml nav updated!"
