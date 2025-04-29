@@ -12,11 +12,11 @@ theme:
     - content.code.copy
 
 # This section will be automatically updated by update-nav.sh
+  - Assets:
   - Daily:
     - 2025 04 16: daily/2025-04-16.md
     - README: daily/README.md
   - Ideas:
-    - README: ideas/README.md
 nav:
   - Assets:
   - Daily:
