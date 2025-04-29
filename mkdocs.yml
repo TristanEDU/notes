@@ -18,14 +18,18 @@ theme:
     - README: daily/README.md
   - Ideas:
 nav:
-    - Assets:
-      - Robot-face-pre-hair-positioned.png: assets/Robot-face-pre-hair-positioned.png
+  - Docs:
+    - Daily:
     - 2025 04 16: daily/2025-04-16.md
     - README: daily/README.md
+    - Ideas:
     - README: ideas/README.md
+    - Jobs:
     - README: jobs/README.md
+    - Projects:
     - Css relitive units: projects/css-relitive-units.md
     - Robot face: projects/robot-face.md
+    - References:
     - README: references/README.md
   - Index: index.md
   - Markdown cheatsheet: markdown-cheatsheet.md

@@ -6,27 +6,24 @@ generate_nav() {
     local indent="$1"
     local path="$2"
     local relpath="${path#docs/}"
-    local name="$(basename "$relpath")"
-    local title="${name//-/ }"
 
-    # Handle assets folder with image files
+    # Skip assets folder
     if [[ "$relpath" == assets* ]]; then
-        echo "${indent}- ${title^}:"
-        for file in "$path"/*.{png,jpg,jpeg,gif,svg,webp}; do
-            [ -e "$file" ] || continue
-            local imgrel="${file#docs/}"
-            local imgname="$(basename "$imgrel")"
-            echo "${indent}  - $imgname: $imgrel"
-        done
         return
     fi
 
-    # Default folder recursion
+    # Folder title
+    local name="$(basename "$relpath")"
+    local title="${name//-/ }"
+
+    echo "${indent}- ${title^}:"
+
+    # Recursively add subfolders first
     for dir in $(find "$path" -mindepth 1 -type d | sort); do
         generate_nav "  $indent" "$dir"
     done
 
-    # Add .md files for all other folders
+    # Then add .md files
     for file in "$path"/*.md; do
         [ -e "$file" ] || continue
         local relfile="${file#docs/}"
@@ -36,15 +33,14 @@ generate_nav() {
     done
 }
 
+# Clean mkdocs.yml top block (stop copying manual junk)
+awk '/^nav:/ {exit} {print}' mkdocs.yml > mkdocs.yml.tmp
 
-#paste to mkdocs.yml, preserving top settings
-head -n 20 mkdocs.yml | grep -v "^nav:" > mkdocs.yml.tmp
-
-# Append updated nav
+# Append new nav
 echo "nav:" >> mkdocs.yml.tmp
 generate_nav "  " "docs" >> mkdocs.yml.tmp
 
 # Replace old file
 mv mkdocs.yml.tmp mkdocs.yml
 
-echo "✅ mkdocs.yml nav updated!"
+echo "✅ mkdocs.yml nav updated (assets skipped)!"
