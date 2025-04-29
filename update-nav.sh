@@ -5,27 +5,39 @@ set -e
 generate_nav() {
     local indent="$1"
     local path="$2"
+    local relpath="${path#docs/}"
+    local name="$(basename "$relpath")"
+    local title="${name//-/ }"
 
-    # Loop through folders first
-    for dir in $(find "$path" -mindepth 1 -type d | sort); do
-        local relpath="${dir#docs/}"
-        local name="$(basename "$relpath")"
-        local title="${name//-/ }"
+    # Handle assets folder with image files
+    if [[ "$relpath" == assets* ]]; then
         echo "${indent}- ${title^}:"
+        for file in "$path"/*.{png,jpg,jpeg,gif,svg,webp}; do
+            [ -e "$file" ] || continue
+            local imgrel="${file#docs/}"
+            local imgname="$(basename "$imgrel")"
+            echo "${indent}  - $imgname: $imgrel"
+        done
+        return
+    fi
+
+    # Default folder recursion
+    for dir in $(find "$path" -mindepth 1 -type d | sort); do
         generate_nav "  $indent" "$dir"
     done
 
-    # Then add markdown files in the current folder
+    # Add .md files for all other folders
     for file in "$path"/*.md; do
         [ -e "$file" ] || continue
-        local relpath="${file#docs/}"
-        local name="$(basename "$file" .md)"
-        local title="${name//-/ }"
-        echo "${indent}- ${title^}: $relpath"
+        local relfile="${file#docs/}"
+        local fname="$(basename "$file" .md)"
+        local title="${fname//-/ }"
+        echo "${indent}- ${title^}: $relfile"
     done
 }
 
-# Write to mkdocs.yml, preserving top settings
+
+#paste to mkdocs.yml, preserving top settings
 head -n 20 mkdocs.yml | grep -v "^nav:" > mkdocs.yml.tmp
 
 # Append updated nav
