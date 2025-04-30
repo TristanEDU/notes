@@ -24,73 +24,73 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 <details>
   <summary>Click to expand code snippet</summary>
 
-/* HTML: <div class="tooltip">This is a Tooltip with a border and a border radius. Border and background have a gradient coloration </div> */
-.tooltip {
-  color: #fff;
-  font-size: 18px;
-  max-width: 28ch;
-  text-align: center;
-}
-.tooltip {
-  /* triangle dimension */
-  --a: 90deg; /* angle */
-  --h: 1em; /* height */
-
-  --p: 49%; /* triangle position (0%:left 100%:right) */
-  --b: 5px; /* border width */
-  --r: 1.2em; /* the radius */
-
-  padding: 1em;
-  border: var(--b) solid #0000;
-  border-radius: min(var(--r), var(--p) - var(--h) * tan(var(--a) / 2))
-    min(var(--r), 100% - var(--p) - var(--h) * tan(var(--a) / 2)) var(--r)
-    var(--r) / var(--r);
-  background: padding-box linear-gradient(-30deg, #563444, #cf9d38),
-    /* background gradient */ border-box
-      repeating-conic-gradient(#2f505e 0 8deg, #ffd109 0 16deg); /* border gradient  */
-  background-size: 100% calc(100% + var(--h));
-  background-position: bottom;
-  position: relative;
-  z-index: 0;
-}
-.tooltip:before,
-.tooltip:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: calc(-1 * var(--b) - var(--h)) calc(-1 * var(--b)) calc(-1 * var(--b));
-  background: inherit;
-}
-.tooltip:before {
-  background-size: 0 0, 100% 100%;
-  clip-path: polygon(
-    min(100%, var(--p) + var(--h) * tan(var(--a) / 2)) calc(var(--h) + var(--b)),
-    min(100%, var(--p) + var(--h) * tan(var(--a) / 2)) var(--h),
-    var(--p) 0,
-    max(0%, var(--p) - var(--h) * tan(var(--a) / 2)) var(--h),
-    max(0%, var(--p) - var(--h) * tan(var(--a) / 2)) calc(var(--h) + var(--b))
-  );
-}
-.tooltip:after {
-  border: inherit;
-  background-size: 100% 100%, 0 0;
-  clip-path: polygon(
-    min(
-        100% - var(--b),
-        var(--p) + var(--h) * tan(var(--a) / 2) - var(--b) *
-          tan(45deg - var(--a) / 4)
-      )
-      calc(var(--h) + var(--b)),
-    var(--p) calc(var(--b) / sin(var(--a) / 2)),
-    max(
-        var(--b),
-        var(--p) - var(--h) * tan(var(--a) / 2) + var(--b) *
-          tan(45deg - var(--a) / 4)
-      )
-      calc(var(--h) + var(--b)),
-    50% 50%
-  );
-}
+    /* HTML: <div class="tooltip">This is a Tooltip with a border and a border radius. Border and background have a gradient coloration </div> */
+    .tooltip {
+      color: #fff;
+      font-size: 18px;
+      max-width: 28ch;
+      text-align: center;
+    }
+    .tooltip {
+      /* triangle dimension */
+      --a: 90deg; /* angle */
+      --h: 1em; /* height */
+    
+      --p: 49%; /* triangle position (0%:left 100%:right) */
+      --b: 5px; /* border width */
+      --r: 1.2em; /* the radius */
+    
+      padding: 1em;
+      border: var(--b) solid #0000;
+      border-radius: min(var(--r), var(--p) - var(--h) * tan(var(--a) / 2))
+        min(var(--r), 100% - var(--p) - var(--h) * tan(var(--a) / 2)) var(--r)
+        var(--r) / var(--r);
+      background: padding-box linear-gradient(-30deg, #563444, #cf9d38),
+        /* background gradient */ border-box
+          repeating-conic-gradient(#2f505e 0 8deg, #ffd109 0 16deg); /* border gradient  */
+      background-size: 100% calc(100% + var(--h));
+      background-position: bottom;
+      position: relative;
+      z-index: 0;
+    }
+    .tooltip:before,
+    .tooltip:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: calc(-1 * var(--b) - var(--h)) calc(-1 * var(--b)) calc(-1 * var(--b));
+      background: inherit;
+    }
+    .tooltip:before {
+      background-size: 0 0, 100% 100%;
+      clip-path: polygon(
+        min(100%, var(--p) + var(--h) * tan(var(--a) / 2)) calc(var(--h) + var(--b)),
+        min(100%, var(--p) + var(--h) * tan(var(--a) / 2)) var(--h),
+        var(--p) 0,
+        max(0%, var(--p) - var(--h) * tan(var(--a) / 2)) var(--h),
+        max(0%, var(--p) - var(--h) * tan(var(--a) / 2)) calc(var(--h) + var(--b))
+      );
+    }
+    .tooltip:after {
+      border: inherit;
+      background-size: 100% 100%, 0 0;
+      clip-path: polygon(
+        min(
+            100% - var(--b),
+            var(--p) + var(--h) * tan(var(--a) / 2) - var(--b) *
+              tan(45deg - var(--a) / 4)
+          )
+          calc(var(--h) + var(--b)),
+        var(--p) calc(var(--b) / sin(var(--a) / 2)),
+        max(
+            var(--b),
+            var(--p) - var(--h) * tan(var(--a) / 2) + var(--b) *
+              tan(45deg - var(--a) / 4)
+          )
+          calc(var(--h) + var(--b)),
+        50% 50%
+      );
+    }
 
 </details>
 
