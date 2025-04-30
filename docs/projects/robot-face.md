@@ -132,5 +132,4 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 
 </details>
 
-- The issue is when I change the positioning to absolute, fixed or sticky it disapears everywhere. I cant even find in it in the dev tools. ~~This may be a result of using relitive units when I was doing this...~~ *Nevermind that was not the issue it does the same thing when I use pixels as well.* 
-- 
+-The issue is when I change the positioning to absolute, fixed or sticky it disapears everywhere. I cant even find in it in the dev tools. This may be a result of using relitive units when I was doing this... *Nevermind that was not the issue it does the same thing when I use pixels as well.* 
