@@ -24,6 +24,7 @@ nav:
     - Css relitive units: projects/css-relitive-units.md
     - Robot face: projects/robot-face.md
   - References:
+    - CSS resources: references/CSS-resources.md
     - README: references/README.md
   - Index: index.md
   - Markdown cheatsheet: markdown-cheatsheet.md
