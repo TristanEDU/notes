@@ -24,7 +24,7 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 <details>
   <summary>Click to expand code snippet</summary>
 
-```/* HTML: <div class="tooltip">This is a Tooltip with a border and a border radius. Border and background have a gradient coloration </div> */
+/* HTML: <div class="tooltip">This is a Tooltip with a border and a border radius. Border and background have a gradient coloration </div> */
 .tooltip {
   color: #fff;
   font-size: 18px;
@@ -92,6 +92,6 @@ I am working on the LH ear and I used the code snippet found below that I got fr
   );
 }
 
-</details>```
+</details>
 
 
