@@ -95,12 +95,37 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 
 </details>
 
-- In the `.tooltip:after` section my W3C validation came up with a problem on the second to last line with the simi-colon... it apears that it is causing a parse error which I suspect is also why it is not rendering in the browser. [screen shot of the problem](../assets/Robot-face-clip-path-error.png)
+- In the `.tooltip:after` section my W3C validation came up with a problem on the second to last line with the simi-colon... it apears that it is causing a parse error which I suspect is also why it is not rendering in the browser. ![screen shot of the problem](../assets/Robot-face-clip-path-error.png)
 	- The issue with the rendering turned out to be a result of not saving the the class changes to my HTML...
 	- I am still unsure as to the issue with the clip-path. As best I can till the syntax is correct
 
-- It apears that the changes to the ear have affected the positioning of the my hair element. I think that I may need to re-evaluate my aproach to positioning it. It is possible that I may be able to fix this by changing the positioning of the `.tooltip` element however I think that it will be better to fix the hair first. [Before issue](../assets/Robot-face-post-hair-positioned.png)[After issue](../assets/Robot-face-hair-after-LHear.png)
+- It apears that the changes to the ear have affected the positioning of the my hair element. I think that I may need to re-evaluate my aproach to positioning it. It is possible that I may be able to fix this by changing the positioning of the `.tooltip` element however I think that it will be better to fix the hair first. ![Before issue](../assets/Robot-face-post-hair-positioned.png)![After issue](../assets/Robot-face-hair-after-LHear.png)
 
 ###Hair
-- I think that I need to use either Fixed or absolute... Probably fixed. I do not under stand why relitive is not working aside that it has to do with how it plays off of the other elements right before it.
- 
+- I think that I need to use either Fixed or absolute... Probably fixed. I do not under stand why relitive is not working aside that it has to do with how it plays off of the other elements right before it. Here is the current code:<details>                                                                                                             <summary>Click to expand code snippet</summary>                                                                                                                                                                                         <pre><code>
+.robot-hair-style {
+  position: relative;
+  left: 46vw;
+  top: -50vh;
+}
+
+.robot-hair-one {
+  box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 0.5em red,
+    2.5em 1.5em 0 0.5em red, -3em -3em 0 0 red, 3em -3em 0 0 red,
+    -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red,
+    2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red,
+    3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red,
+    4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red,
+    -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red,
+    -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red;
+  background: red;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  margin: 50px 0 70px 65px;
+}
+ </code></pre>
+
+</details>
+	- The issue is when I change the positioning to absolute, fixed or sticky it disapears everywhere. I cant even find in it in the dev tools. ~~*This may be a result of using relitive units when I was doing this.../*~~ *Nevermind that was not the issue it does the same thing when I use pixels as well.* 
+	- 
