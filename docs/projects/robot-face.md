@@ -102,7 +102,8 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 - It apears that the changes to the ear have affected the positioning of the my hair element. I think that I may need to re-evaluate my aproach to positioning it. It is possible that I may be able to fix this by changing the positioning of the `.tooltip` element however I think that it will be better to fix the hair first. ![Before issue](../assets/Robot-face-post-hair-positioned.png)![After issue](../assets/Robot-face-hair-after-LHear.png)
 
 ###Hair
-- I think that I need to use either Fixed or absolute... Probably fixed. I do not under stand why relitive is not working aside that it has to do with how it plays off of the other elements right before it. Here is the current code:<details>
+- I think that I need to use either Fixed or absolute... Probably fixed. I do not under stand why relitive is not working aside that it has to do with how it plays off of the other elements right before it. Here is the current code:
+<details>
   <summary>Click to expand code snippet</summary>
 
   <pre><code>
