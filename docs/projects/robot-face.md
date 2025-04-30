@@ -102,7 +102,10 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 - It apears that the changes to the ear have affected the positioning of the my hair element. I think that I may need to re-evaluate my aproach to positioning it. It is possible that I may be able to fix this by changing the positioning of the `.tooltip` element however I think that it will be better to fix the hair first. ![Before issue](../assets/Robot-face-post-hair-positioned.png)![After issue](../assets/Robot-face-hair-after-LHear.png)
 
 ###Hair
-- I think that I need to use either Fixed or absolute... Probably fixed. I do not under stand why relitive is not working aside that it has to do with how it plays off of the other elements right before it. Here is the current code:<details>                                                                                                             <summary>Click to expand code snippet</summary>                                                                                                                                                                                         <pre><code>
+- I think that I need to use either Fixed or absolute... Probably fixed. I do not under stand why relitive is not working aside that it has to do with how it plays off of the other elements right before it. Here is the current code:<details>
+  <summary>Click to expand code snippet</summary>
+
+  <pre><code>
 .robot-hair-style {
   position: relative;
   left: 46vw;
@@ -124,8 +127,9 @@ I am working on the LH ear and I used the code snippet found below that I got fr
   overflow: hidden;
   margin: 50px 0 70px 65px;
 }
- </code></pre>
+  </code></pre>
 
 </details>
+
 	- The issue is when I change the positioning to absolute, fixed or sticky it disapears everywhere. I cant even find in it in the dev tools. ~~*This may be a result of using relitive units when I was doing this.../*~~ *Nevermind that was not the issue it does the same thing when I use pixels as well.* 
 	- 
