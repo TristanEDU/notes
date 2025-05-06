@@ -133,5 +133,14 @@ I am working on the LH ear and I used the code snippet found below that I got fr
 </details>
 
 - The issue is when I change the positioning to absolute, fixed or sticky it disapears everywhere. I cant even find in it in the dev tools. ~This may be a result of using relitive units when I was doing this...~ *Nevermind that was not the issue it does the same thing when I use pixels as well.* 
-	- It turned out that I needed to manually set the width and aperently a second top of the `.robot-hair-style`. This makes it visible but does not fix the relitive positioning and I find the extra top selector very odd... [without the top selector](../assets/Robot-face-without-top.png) [with the top selector](../assets/Robot-face-with-top.png)
+	- It turned out that I needed to manually set the width and aperently a second top of the `.robot-hair-style`. This makes it visible but does not fix the relitive positioning and I find the extra top selector very odd... ![without the top selector](../assets/Robot-face-without-top.png) ![with the top selector](../assets/Robot-face-with-top.png)
 	- It turns out that I need to remove the top selector that makes it negitive as when I changed the positioning scheme from relitive to fixed this caused the point where top was being measured from to change [*see css-refernce note*](../references/CSS-resources.md). I still do not understand why width does not work and I would still like to figure out how to make this responsive but I may leave that for another time...
+	- I figured out what the issue is, I had a faulty understanding of how `position: relitive;` and `position: fixed;` worked. As it turns out relitive measures from it's parent container which means that I was positioning my hair off screen.
+
+###LH Ear
+- I transitioned everything to `position: fixed;` which has fixed most of my issues and then I positiond everything by the side closest to the robot face *eg. LH ear is position from the right...*
+- The position fixed has fixed everything aside from my issue with the hair not centering properly when I shrink the screen to much.
+
+###Robot in General
+Overal I am happy with it there is still a positioning issue when you magorly change the size of the screen as the screen shots below show. I am not sure that they can be fixed while still staying inside of the project guidlines.
+![Robot face 1](../assets/Robot-face1.png) ![Robot face 2](../assets/Robot-face2.png)
