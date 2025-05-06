@@ -148,7 +148,7 @@ Overal I am happy with it there is still a positioning issue when you magorly ch
   <summary>Click to expand code snippet</summary>
 
   <code><pre>
-<!DOCTYPE html>
+(<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -209,7 +209,7 @@ Overal I am happy with it there is still a positioning issue when you magorly ch
       </div>
     </div>
   </body>
-</html>
+</html>)
   </code></pre>
 
 </details>
