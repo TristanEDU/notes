@@ -19,6 +19,7 @@ nav:
   - Ideas:
     - README: ideas/README.md
   - Jobs:
+    - 182 remodel site: jobs/182-remodel-site.md
     - README: jobs/README.md
   - Projects:
     - Css relitive units: projects/css-relitive-units.md
