@@ -19,15 +19,19 @@ nav:
   - Ideas:
     - README: ideas/README.md
   - Jobs:
-    - Hole:
-    - In:
-    - One:
+    - Hole In One:
+      - Amy fanter profile: jobs/Hole-In-One/amy-fanter-profile.md
+      - Organization overview: jobs/Hole-In-One/organization-overview.md
+      - Pih organization research: jobs/Hole-In-One/pih-organization-research.md
+      - Project notes hiousa: jobs/Hole-In-One/project-notes-hiousa.md
     - 182 remodel site: jobs/182-remodel-site.md
     - Amy Fanter: jobs/Amy-Fanter.md
     - README: jobs/README.md
-  - Hole:
-  - In:
-  - One:
+  - Hole In One:
+    - Amy fanter profile: jobs/Hole-In-One/amy-fanter-profile.md
+    - Organization overview: jobs/Hole-In-One/organization-overview.md
+    - Pih organization research: jobs/Hole-In-One/pih-organization-research.md
+    - Project notes hiousa: jobs/Hole-In-One/project-notes-hiousa.md
   - Projects:
     - Css relitive units: projects/css-relitive-units.md
     - Robot face: projects/robot-face.md
