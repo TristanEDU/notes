@@ -53,3 +53,11 @@ Website: [https://www.oddsonpromotions.com](https://www.oddsonpromotions.com)
 6. **Optimize for SEO**: Incorporate relevant keywords, meta descriptions, and alt text for images to improve search engine visibility.
 7. **Integrate Social Proof**: Display logos of notable clients or partners and include links to active social media profiles to build trust.
 8. **Simplify Navigation**: Streamline the menu structure to make it more intuitive, helping users find information more efficiently.
+
+#Meeting details 5/7/25
+- they have been working overseas but are looking for a stateside dev
+- need funcionality upgrades
+- 24th of april was last working backup
+- study quick quotes on amazon web services
+- David is IT guy
+

@@ -19,9 +19,15 @@ nav:
   - Ideas:
     - README: ideas/README.md
   - Jobs:
+    - Hole:
+    - In:
+    - One:
     - 182 remodel site: jobs/182-remodel-site.md
     - Amy Fanter: jobs/Amy-Fanter.md
     - README: jobs/README.md
+  - Hole:
+  - In:
+  - One:
   - Projects:
     - Css relitive units: projects/css-relitive-units.md
     - Robot face: projects/robot-face.md
