@@ -13,6 +13,11 @@ theme:
 
 # This section will be automatically updated by update-nav.sh
 nav:
+  - Classes:
+    - Freelance:
+      - Nathens call 5925: classes/Freelance/nathens-call-5925.md
+  - Freelance:
+    - Nathens call 5925: classes/Freelance/nathens-call-5925.md
   - Daily:
     - 2025 04 16: daily/2025-04-16.md
     - README: daily/README.md
