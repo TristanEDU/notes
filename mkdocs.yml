@@ -29,6 +29,11 @@ nav:
       - Organization overview: jobs/Hole-In-One/organization-overview.md
       - Pih organization research: jobs/Hole-In-One/pih-organization-research.md
       - Project notes hiousa: jobs/Hole-In-One/project-notes-hiousa.md
+    - E9digital:
+      - Crm implementation notes: jobs/e9digital/crm-implementation-notes.md
+      - E9digital overview: jobs/e9digital/e9digital-overview.md
+      - Gohighlevel training checklist: jobs/e9digital/gohighlevel-training-checklist.md
+      - Meeting prep: jobs/e9digital/meeting-prep.md
     - 182 remodel site: jobs/182-remodel-site.md
     - Amy Fanter: jobs/Amy-Fanter.md
     - README: jobs/README.md
@@ -37,6 +42,11 @@ nav:
     - Organization overview: jobs/Hole-In-One/organization-overview.md
     - Pih organization research: jobs/Hole-In-One/pih-organization-research.md
     - Project notes hiousa: jobs/Hole-In-One/project-notes-hiousa.md
+  - E9digital:
+    - Crm implementation notes: jobs/e9digital/crm-implementation-notes.md
+    - E9digital overview: jobs/e9digital/e9digital-overview.md
+    - Gohighlevel training checklist: jobs/e9digital/gohighlevel-training-checklist.md
+    - Meeting prep: jobs/e9digital/meeting-prep.md
   - Projects:
     - Css relitive units: projects/css-relitive-units.md
     - Robot face: projects/robot-face.md
