@@ -92,6 +92,13 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 
 🕒 Estimated Time: 3 hours
 
+#### I had ChatGPT test me exstinsivly in the subjects Disscused in day one
+- I need to study the procces for building a lead capture form
+- What is UTM data?
+- How do you use tracking links?
+- What is a drip email sequence and how do you build it?
+[Day one test Note](./Day-one-test.md)
+
 ---
 
 ## 📆 Day 2: Drip Campaigns & Affiliate Tracking
