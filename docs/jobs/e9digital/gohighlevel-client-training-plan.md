@@ -42,8 +42,9 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 		- W shaped model: is simaler to U shaped but it also focus on a middle point as well. It is generaly most usful in a B2B setting with well defined funnels that are easy to calculate. In most cases it is just to cumbersome and diffacult to set up as well as being to complicated to operate.
 	- Data Driven Attribution:
 		- Data driven models use machien learning and predictive analytics to decide which are the most valuble touchpoints, the algorithim determins which framework is best. This is very valuble for complex customer journeys witha a lot of touch points however due to the complexity and cost to opperate they are genealy only practical for companies with large bugets.
-	- Custom Attribution:
+	- **Custom Attribution:**
 		- Custom attribution allos a company to make up it's own rules about which touch points get credit. This is good for complex or abnormal marketing stratigies that other models have a hard time capturing but due the the complexity and cost of setting up and maintianing such a system it is only generaly practical companys with the budget and direct need for such a system.
+
 [Marketing attribution image](../../assets/Marketing_Attribution_Image.webp)
 
 | Attribution Model | Use Case | Pros | Cons |
@@ -57,6 +58,24 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 | Data-driven | - ROAS<br>- Channel Optimization | - Uses actual data for accuracy<br>- Reflects true impact | - Requires significant data<br>- Can be complex to implement |
 | Custom | - Specific business goal<br>- Complex journeys | - Tailored to business needs<br>- Flexible | - Requires significant data<br>- Requires significant data and expertise<br>- Complex to set up |
 
+	- **What to avoid in attribution modeling**
+		- Last click is not always *"good enough'* in general try to use multi touch instead.
+		- Attribution models are **NOT** *"one size fits all"* you will use a different model for say a brand awarness campaingn then you would for a campaign that focus's on conversions
+		- Models are not nessarily 100% acurate. It is important to constantly check them and make sure that the data is up to date and acurate.
+		- Attribution models **NEED** regular reveiws and updates
+		- Attribution modeling is not just for digital Channels. It is nessesary to intagrate offline data as well.
+	- **How to build Custom Data Attribution models:**
+		1. Decide and define clea, Detailed objectives
+		2. Decide what constitutes as a conversion event
+		3. Set a Lookback window. This means deciding how long between interactons the user goes before the last interaction no longer counts towards the conversion
+		4. Give each touch point proper weight and prpare to review them on a regular bases
+		5. It is nessasary to regulary test and evaluate your model including A/B Testing
+		6. Utilize proper vendors and tools to implement properly. Google analitcs may be biased toward google channels undervaluing non google channels
+		7. contenued testing and refinement
+
+>>>*If you want to improve your marketing attribution, it is important that you first agree with everyone involved about the goals that you want to achieve in your organization. Understanding the questions that need to be answered will help you define the attribution models and methods you can choose from. Before you commit to a particular approach, evaluate your team’s capabilities. Although custom attribution gives you the best picture of your customers, it can be a complex process. Either opt for an out-of-the-box solution or choose to create your customized attribution model.*
+
+>>>*Attribution is not just about deriving data, but rather using scientifically validated approaches to understand the impact of different attribution models on business goals and KPIs. By selecting the right data and methods and maintaining a flexible, adaptable approach, you can gain a more accurate and actionable view of your marketing effectiveness, ultimately leading to better decision-making and higher ROI.*
 - 📖 [Attribution Models & Conversion Tracking – Two Trees PPC](https://twotreesppc.com/resources/2024-guide-to-attribution-models-and-conversion-tracking)
 - 📖 [Marketing Attribution: Everything You Need To Know – POWR Blog](https://blog.powr.io/marketing-attribution-everything-you-need-to-know-2024)
 
