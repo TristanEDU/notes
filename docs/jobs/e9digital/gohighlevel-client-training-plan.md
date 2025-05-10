@@ -58,6 +58,7 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 | Data-driven | - ROAS<br>- Channel Optimization | - Uses actual data for accuracy<br>- Reflects true impact | - Requires significant data<br>- Can be complex to implement |
 | Custom | - Specific business goal<br>- Complex journeys | - Tailored to business needs<br>- Flexible | - Requires significant data<br>- Requires significant data and expertise<br>- Complex to set up |
 
+
 	- **What to avoid in attribution modeling**
 		- Last click is not always *"good enough'* in general try to use multi touch instead.
 		- Attribution models are **NOT** *"one size fits all"* you will use a different model for say a brand awarness campaingn then you would for a campaign that focus's on conversions
@@ -76,7 +77,9 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 >>>*If you want to improve your marketing attribution, it is important that you first agree with everyone involved about the goals that you want to achieve in your organization. Understanding the questions that need to be answered will help you define the attribution models and methods you can choose from. Before you commit to a particular approach, evaluate your team’s capabilities. Although custom attribution gives you the best picture of your customers, it can be a complex process. Either opt for an out-of-the-box solution or choose to create your customized attribution model.*
 
 >>>*Attribution is not just about deriving data, but rather using scientifically validated approaches to understand the impact of different attribution models on business goals and KPIs. By selecting the right data and methods and maintaining a flexible, adaptable approach, you can gain a more accurate and actionable view of your marketing effectiveness, ultimately leading to better decision-making and higher ROI.*
+
 - 📖 [Attribution Models & Conversion Tracking – Two Trees PPC](https://twotreesppc.com/resources/2024-guide-to-attribution-models-and-conversion-tracking)
+
 - 📖 [Marketing Attribution: Everything You Need To Know – POWR Blog](https://blog.powr.io/marketing-attribution-everything-you-need-to-know-2024)
 
 🕒 Estimated Time: 3 hours
