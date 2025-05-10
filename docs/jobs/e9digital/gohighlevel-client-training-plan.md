@@ -58,7 +58,7 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 | Data-driven | - ROAS<br>- Channel Optimization | - Uses actual data for accuracy<br>- Reflects true impact | - Requires significant data<br>- Can be complex to implement |
 | Custom | - Specific business goal<br>- Complex journeys | - Tailored to business needs<br>- Flexible | - Requires significant data<br>- Requires significant data and expertise<br>- Complex to set up |
 
-
+- Wrapping up
 	- **What to avoid in attribution modeling**
 		- Last click is not always *"good enough'* in general try to use multi touch instead.
 		- Attribution models are **NOT** *"one size fits all"* you will use a different model for say a brand awarness campaingn then you would for a campaign that focus's on conversions
