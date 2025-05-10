@@ -41,7 +41,21 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 		- U Shaped model: This gives 40% to the first and last touch point and then spreads the other 20% between the middle points. It is usfule if you want to see specific touchpoints while still haveing a overveiw of the situation. Most commonly it is used for e-commerce metrics such as ROAS and CLV...
 		- W shaped model: is simaler to U shaped but it also focus on a middle point as well. It is generaly most usful in a B2B setting with well defined funnels that are easy to calculate. In most cases it is just to cumbersome and diffacult to set up as well as being to complicated to operate.
 	- Data Driven Attribution:
-		- Data driven models use machien learning and predictive analytics to decide which are the most valuble touchpoints, the algorithim determins which framework is best. This is very valuble for complex customer journeys witha a lot of touch points however due to the complexity and cost to opperate they are genealy only practical for companies with large bugets. 
+		- Data driven models use machien learning and predictive analytics to decide which are the most valuble touchpoints, the algorithim determins which framework is best. This is very valuble for complex customer journeys witha a lot of touch points however due to the complexity and cost to opperate they are genealy only practical for companies with large bugets.
+	- Custom Attribution:
+		- Custom attribution allos a company to make up it's own rules about which touch points get credit. This is good for complex or abnormal marketing stratigies that other models have a hard time capturing but due the the complexity and cost of setting up and maintianing such a system it is only generaly practical companys with the budget and direct need for such a system.
+[Marketing attribution image](../../assets/Marketing_Attribution_Image.webp)
+| Attribution Model | Use Case                             | Pros                                                                 | Cons                                                                 |
+|-------------------|--------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
+| First-Touch       | - Brand awareness<br>- Customer acquisition        | - Simple to implement<br>- Highlights initial touchpoints            | - Ignores the middle and end of the journey<br>- Overemphasizes first interaction |
+| Last-Touch        | - Conversion Rate Optimization<br>- Customer acquisition | - Highlights final touchpoints leading to conversion                 | - Ignores earlier interactions<br>- Overemphasizes last interaction  |
+| Linear            | - Customer retention<br>- Customer engagement     | - Distributes credit evenly<br>- Reflects all touchpoints            | - Can dilute the impact of key interactions<br>- Doesn’t differentiate touchpoint importance |
+| Time-decay        | - Channel optimization<br>- Customer retention    | - Gives more credit to recent touchpoints<br>- Reflects journey progression | - Can undervalue initial interactions<br>- Doesn’t differentiate touchpoint importance |
+| U-shaped          | - Customer acquisition<br>- Brand awareness       | - Emphasizes first and last touchpoints<br>- Highlights key stages   | - Ignores middle touchpoints<br>- Can be complex to set up           |
+| W-shaped          | - Customer acquisition<br>- Conversion Rate Optimization | - Emphasizes first, middle, and last touchpoints<br>- Reflects multiple stages | - Can overemphasize certain interactions<br>- More complex to implement |
+| Data-driven       | - ROAS<br>- Channel Optimization                 | - Uses actual data for accuracy<br>- Reflects true impact            | - Requires significant data<br>- Can be complex to implement         |
+| Custom            | - Specific business goal<br>- Complex journeys   | - Tailored to business needs<br>- Flexible                           | - Requires significant data<br>- Requires significant data and expertise<br>- Complex to set up |
+ 
 - 📖 [Attribution Models & Conversion Tracking – Two Trees PPC](https://twotreesppc.com/resources/2024-guide-to-attribution-models-and-conversion-tracking)
 - 📖 [Marketing Attribution: Everything You Need To Know – POWR Blog](https://blog.powr.io/marketing-attribution-everything-you-need-to-know-2024)
 
