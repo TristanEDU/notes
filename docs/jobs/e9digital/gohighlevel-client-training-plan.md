@@ -79,8 +79,16 @@ Understand GoHighLevel's CRM functionalities and grasp marketing attribution mod
 >>>*Attribution is not just about deriving data, but rather using scientifically validated approaches to understand the impact of different attribution models on business goals and KPIs. By selecting the right data and methods and maintaining a flexible, adaptable approach, you can gain a more accurate and actionable view of your marketing effectiveness, ultimately leading to better decision-making and higher ROI.*
 
 - 📖 [Attribution Models & Conversion Tracking – Two Trees PPC](https://twotreesppc.com/resources/2024-guide-to-attribution-models-and-conversion-tracking)
+	- A conversion does not nessesaraly have to be a sale it can be any goal that we are trying to drive the user towards such as a contact form submission or a newsletter sighnup...
+	- Without attribution modeling it is almost imposible to utilize conversion based insights such as lead costs and per conversion cost
+	- Essentialy you are comparing the paths of customers who did convert to the paths of those whoe didnt to understand the keypoints that are succeful and those that fail.
+	- Thank you pages are the most common method of tracking conversions
+	- Enhanced conversion can help track a multiple conversion prosses to the final sale *"For example, enhanced conversions allow you to attribute multiple conversions and events to a final sale: perhaps the user signed up for your newsletter, added 3 items to their cart, and then visited the website from a remarketing ad to complete the final conversion (sale)."*
+	- Enhanced conversion analytic gives a better veiw of both online and offline data.
+>>>While attribution modeling can sound like a minefield, it’s often something that goes unnoticed day-to-day. But, it’s a crucial factor to understand when optimizing campaigns and during data-driven decisionmaking. Without getting it right, you may end up making disastrous decisions for your brand.
 
 - 📖 [Marketing Attribution: Everything You Need To Know – POWR Blog](https://blog.powr.io/marketing-attribution-everything-you-need-to-know-2024)
+	- This is the best one for scenario based examples, it pretty much covers the same topics that the other two do but it gives better exampels and explinations however it is less technical.
 
 🕒 Estimated Time: 3 hours
 
