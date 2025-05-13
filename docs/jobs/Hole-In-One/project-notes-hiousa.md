@@ -38,7 +38,7 @@ Diagnose and resolve recurring CSS file loss after updates/caching events. Prima
 - [Fathom Transcript](https://fathom.video/share/fyBCTRNmN-Qs8qXoNt1Vu933zWP2TxZt)
 
 **Reference Emails:**
-- [Project Scope Email](../assets/WordPress Work HIOUSA.eml)
-- [Pre-Call Expectations](../assets/What to Expect in Today’s Call.eml)
+- [Project Scope Email](../../assets/'WordPress Work HIOUSA.eml')
+- [Pre-Call Expectations](../../assets/What to Expect in Today’s Call.eml)
 
 See [organization-overview.md](organization-overview.md) for structural context.
