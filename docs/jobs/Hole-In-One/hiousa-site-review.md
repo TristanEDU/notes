@@ -31,6 +31,10 @@ This is a older non WP blog theme... Can't say I am impressed with how it looks.
 - Yoast Duplicate Post *(Clone posts and pages, including powerful Rewrite & Re-publish.)*
 - Yoast SEO *(SEO solution for WordPress including content analysis, XML sitemaps and more.)*
 ###Site Health Dashboard Info
+
+<details>
+
+	<pre><code>
 ```
 ### wp-core ###
 
@@ -216,5 +220,8 @@ fonts: does not exist
 mu-plugins: writable
 
 ```
+	</code></pre>
+
+</details>
 ##Observations
 - there are several securitiy tasks in the site health enviroment.
