@@ -225,3 +225,5 @@ mu-plugins: writable
 </details>
 ##Observations
 - there are several securitiy tasks in the site health enviroment.
+##Questions
+1. I was supposed to get accese to the dev and staging sites as well as hiousa.com but I only have accese to hiousa.com and the dev site.
