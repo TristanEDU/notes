@@ -227,3 +227,8 @@ mu-plugins: writable
 - there are several securitiy tasks in the site health enviroment.
 ##Questions
 1. I was supposed to get accese to the dev and staging sites as well as hiousa.com but I only have accese to hiousa.com and the dev site.
+
+##Rebuild
+My current recomendation is that we completly rebuild the site from the ground up. The page editor is junk and then there are so many overlaping plugins I don't even want to start messing with them and to top it off the site is not well built to begin with.
+###My Offer
+- 
