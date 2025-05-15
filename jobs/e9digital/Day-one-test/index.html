@@ -1,0 +1,2669 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../1-hour-crash/">
+      
+      
+        <link rel="next" href="../crm-implementation-notes/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Day one test - My Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gohighlevel-day-1-knowledge-test-review" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="My Notes" class="md-header__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            My Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Day one test
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="My Notes" class="md-nav__button md-logo" aria-label="My Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    My Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Classes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Freelance
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            Freelance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../classes/Freelance/nathens-call-5925/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nathens call 5925
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Freelance
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Freelance
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../classes/Freelance/nathens-call-5925/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Nathens call 5925
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Daily
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Daily
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../daily/2025-04-16/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2025 04 16
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../daily/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Ideas
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ideas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ideas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Jobs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Jobs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hole In One
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Hole In One
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Project-Masterplan%E2%80%93Internal-Strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Project Masterplan–Internal Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Quote-Structure%E2%80%93Rebuild%2BRetainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Quote Structure–Rebuild+Retainer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Rebuild%E2%80%93Strategic-Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Rebuild–Strategic Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Retainer-Model%E2%80%93Internal-Plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Retainer Model–Internal Plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSAClientCallStrategy%E2%80%93ZoomPlanningGuide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSAClientCallStrategy–ZoomPlanningGuide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA_Client_Engagement_Package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA_Client_Engagement_Package
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/amy-fanter-profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Amy fanter profile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/hiousa-site-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hiousa site review
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/organization-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organization overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/pih-organization-research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pih organization research
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/project-notes-hiousa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project notes hiousa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    E9digital
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            E9digital
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-hour-crash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1 hour crash
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Day one test
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Day one test
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-test-walkthrough" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Knowledge Test Walkthrough
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 Knowledge Test Walkthrough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 10
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insights-areas-for-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Insights &amp; Areas for Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Insights &amp; Areas for Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strengths" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Strengths:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggested-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Suggested Improvements:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Suggested Improvements:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-custom-fields-attribution-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Custom Fields &amp; Attribution Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-workflow-logic-mastery" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Workflow Logic Mastery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pipeline-sales-stage-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pipeline &amp; Sales Stage Reporting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-roi-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ROI Tracking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crm-implementation-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Crm implementation notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../e9digital-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    E9digital overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gohighlevel-client-training-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gohighlevel client training plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gohighlevel-training-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gohighlevel training checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meeting-prep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meeting prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../182-remodel-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    182 remodel site
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Amy-Fanter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Amy Fanter
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Hole In One
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Hole In One
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Project-Masterplan%E2%80%93Internal-Strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Project Masterplan–Internal Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Quote-Structure%E2%80%93Rebuild%2BRetainer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Quote Structure–Rebuild+Retainer
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Rebuild%E2%80%93Strategic-Overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Rebuild–Strategic Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA-Retainer-Model%E2%80%93Internal-Plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA Retainer Model–Internal Plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSAClientCallStrategy%E2%80%93ZoomPlanningGuide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSAClientCallStrategy–ZoomPlanningGuide
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/HIOUSA_Client_Engagement_Package/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    HIOUSA_Client_Engagement_Package
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/amy-fanter-profile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Amy fanter profile
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/hiousa-site-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hiousa site review
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/organization-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organization overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/pih-organization-research/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pih organization research
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Hole-In-One/project-notes-hiousa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project notes hiousa
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    E9digital
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            E9digital
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1-hour-crash/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1 hour crash
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Day one test
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Day one test
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-test-walkthrough" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Knowledge Test Walkthrough
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧪 Knowledge Test Walkthrough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#question-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 4
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 5
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 7
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 9
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#question-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Question 10
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insights-areas-for-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Insights &amp; Areas for Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 Insights &amp; Areas for Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#strengths" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Strengths:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#suggested-improvements" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Suggested Improvements:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Suggested Improvements:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-custom-fields-attribution-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Custom Fields &amp; Attribution Tracking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-workflow-logic-mastery" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Workflow Logic Mastery
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-pipeline-sales-stage-reporting" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Pipeline &amp; Sales Stage Reporting
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-roi-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. ROI Tracking
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crm-implementation-notes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Crm implementation notes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../e9digital-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    E9digital overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gohighlevel-client-training-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gohighlevel client training plan
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gohighlevel-training-checklist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Gohighlevel training checklist
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meeting-prep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Meeting prep
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Projects
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/css-relitive-units/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Css relitive units
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../projects/robot-face/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Robot face
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    References
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            References
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/CSS-resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CSS resources
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/GoHighLevel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GoHighLevel
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    README
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../markdown-cheatsheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Markdown cheatsheet
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gohighlevel-day-1-knowledge-test-review">GoHighLevel Day 1 Knowledge Test &amp; Review</h1>
+<h2 id="knowledge-test-walkthrough">🧪 Knowledge Test Walkthrough</h2>
+<p>Each question was answered in real time. Your response is followed by a corrected/enhanced version to solidify understanding.</p>
+<hr />
+<h3 id="question-1"><strong>Question 1</strong></h3>
+<p><strong>Prompt:</strong> What are the core components of the GoHighLevel platform, and how would you explain its value proposition to a non-technical client like e9digital?</p>
+<p><strong>Your Answer:</strong>\
+GoHighLevel is a CRM platform. Its core components are marketing management, sales management, conversion tracking, automation, integrated customer communication, brand reputation management.</p>
+<p><strong>Correct Answer:</strong>\
+GoHighLevel is an all-in-one sales and marketing platform. Its core components include:</p>
+<ul>
+<li>CRM &amp; Pipeline Management</li>
+<li>Marketing Automation (email/SMS/workflows)</li>
+<li>Funnel &amp; Website Builder</li>
+<li>Reputation Management</li>
+<li>Two-Way Communication</li>
+<li>Appointment Scheduling</li>
+<li>Attribution &amp; Campaign Tracking</li>
+<li>White-labeling for agencies</li>
+</ul>
+<p><strong>Client-Facing Summary:</strong>\
+"It simplifies and unifies all your sales and marketing operations in one place, saving you time, improving client communication, and increasing lead conversion."</p>
+<hr />
+<h3 id="question-2"><strong>Question 2</strong></h3>
+<p><strong>Prompt:</strong> Walk me through how you would set up a lead capture form that tracks the marketing source and automatically adds the lead to a pipeline.</p>
+<p><strong>Your Answer:</strong>\
+I would use the integrated form builder inside of GHL to build the form and I would have a question asking where the lead learned about the company.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>Use the form builder with hidden UTM fields (source, medium, campaign)</li>
+<li>Embed on funnel or WP site</li>
+<li>Trigger a workflow on submission</li>
+<li>Add to pipeline</li>
+<li>Tag lead</li>
+<li>Set custom fields</li>
+</ul>
+<hr />
+<h3 id="question-3"><strong>Question 3</strong></h3>
+<p><strong>Prompt:</strong> How does GoHighLevel handle marketing attribution, and how would you set it up to track whether a lead came from Google Ads, Facebook, or organic search?</p>
+<p><strong>Your Answer:</strong>\
+It can integrate Google Analytics as well as other attribution tools and present them to you cleanly.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>Use UTM links in ad traffic</li>
+<li>Capture via hidden form fields</li>
+<li>Store data in custom fields</li>
+<li>Tag contacts or update workflows accordingly</li>
+<li>Use reporting tab for attribution overview</li>
+</ul>
+<hr />
+<h3 id="question-4"><strong>Question 4</strong></h3>
+<p><strong>Prompt:</strong> Explain how GHL's pipeline and opportunity stages work. How would you use them to track and manage a lead's journey from first contact to closed sale?</p>
+<p><strong>Your Answer:</strong>\
+When a client is put into the pipeline either manually or as a result of an automation, they are moved along based on further interactions and actions.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>Create custom stages (e.g., New → Contacted → Proposal Sent → Closed)</li>
+<li>Automate pipeline entry via workflows</li>
+<li>Manually or automatically move based on lead actions</li>
+<li>Use filters and reporting for deal forecasting</li>
+</ul>
+<hr />
+<h3 id="question-5"><strong>Question 5</strong></h3>
+<p><strong>Prompt:</strong> What’s the difference between a campaign and a workflow in GoHighLevel, and which should you use for building a drip email sequence?</p>
+<p><strong>Your Answer:</strong>\
+A campaign is a targeted sequence of ads. A workflow is a reactive series of steps.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>Campaign = legacy tool for linear drip (email/SMS)</li>
+<li>Workflow = visual logic builder (preferred)</li>
+<li>Use workflows for modern sequences with triggers, delays, and branching logic</li>
+</ul>
+<hr />
+<h3 id="question-6"><strong>Question 6</strong></h3>
+<p><strong>Prompt:</strong> How would you integrate GoHighLevel with WordPress so that form submissions and calendar bookings push into GHL?</p>
+<p><strong>Your Answer:</strong>\
+I would embed forms created in the GHL form builder directly into the WP site whenever possible, and when not I would use webhooks and Zapier.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>Preferred: GHL embed codes for forms/calendars</li>
+<li>Alternative: Zapier or webhooks with WP plugins</li>
+<li>Optionally use GHL WordPress plugin for easier embed management</li>
+</ul>
+<hr />
+<h3 id="question-7"><strong>Question 7</strong></h3>
+<p><strong>Prompt:</strong> A lead books a call through the embedded calendar. What should happen automatically afterward?</p>
+<p><strong>Your Answer:</strong>\
+I would automate a confirmation/welcome email and potentially an SMS. Then I would move them into the booked call stage of the pipeline.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>Confirmation email &amp; SMS</li>
+<li>Move to pipeline stage: Booked</li>
+<li>Tag contact</li>
+<li>Notify internal team</li>
+<li>Set reminders before the call</li>
+</ul>
+<hr />
+<h3 id="question-8"><strong>Question 8</strong></h3>
+<p><strong>Prompt:</strong> What are the minimum custom fields you would create to support attribution and automation inside a new GHL setup?</p>
+<p><strong>Your Answer:</strong>\
+I am not sure.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>utm_source, utm_medium, utm_campaign</li>
+<li>Lead Source</li>
+<li>Referring URL</li>
+<li>GCLID</li>
+<li>Booked Call Date</li>
+<li>Owner or Assigned Rep</li>
+</ul>
+<hr />
+<h3 id="question-9"><strong>Question 9</strong></h3>
+<p><strong>Prompt:</strong> What’s the purpose of tags in GHL, and how would you use them differently from custom fields or contact statuses?</p>
+<p><strong>Your Answer:</strong>\
+Tags can indicate the purpose or status of a contact. Example: cold leads, or high-priority leads.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>Tags = temporary, stackable labels for segmentation or automation</li>
+<li>Custom fields = structured data (email, lead source)</li>
+<li>Contact status = global status (e.g., customer, prospect)</li>
+</ul>
+<hr />
+<h3 id="question-10"><strong>Question 10</strong></h3>
+<p><strong>Prompt:</strong> What metrics would you monitor weekly to evaluate whether GHL is driving ROI for a company like e9digital?</p>
+<p><strong>Your Answer:</strong>\
+I would monitor things like GHL funnels and landing pages, tracking things like conversions and new leads.</p>
+<p><strong>Correct Answer:</strong></p>
+<ul>
+<li>New leads and source</li>
+<li>Funnel conversion rate</li>
+<li>Booked calls</li>
+<li>Pipeline movement</li>
+<li>Closed deals</li>
+<li>No-show rate</li>
+<li>Email/SMS performance</li>
+</ul>
+<hr />
+<h2 id="insights-areas-for-improvement">📊 Insights &amp; Areas for Improvement</h2>
+<h3 id="strengths">✅ Strengths:</h3>
+<ul>
+<li>Strong working understanding of the platform and core terminology</li>
+<li>Solid mental model of how leads move through funnels and automations</li>
+<li>Accurate intuition on form building and integration techniques</li>
+</ul>
+<h3 id="suggested-improvements">⚠️ Suggested Improvements:</h3>
+<h4 id="1-custom-fields-attribution-tracking">1. Custom Fields &amp; Attribution Tracking</h4>
+<p><strong>Resource:</strong> <a href="https://help.gohighlevel.com/support/solutions/articles/48001161579-how-to-use-custom-fields">Using Custom Fields</a>\
+<strong>Fix:</strong> Practice creating custom fields and mapping UTM parameters into workflows.</p>
+<h4 id="2-workflow-logic-mastery">2. Workflow Logic Mastery</h4>
+<p><strong>Resource:</strong> <a href="https://help.gohighlevel.com/support/solutions/articles/155000001701-how-to-use-workflows-in-gohighlevel">How to Use Workflows</a>\
+<strong>Fix:</strong> Set up test workflows with branching logic and internal notifications.</p>
+<h4 id="3-pipeline-sales-stage-reporting">3. Pipeline &amp; Sales Stage Reporting</h4>
+<p><strong>Resource:</strong> <a href="https://help.gohighlevel.com/support/solutions/articles/155000001985-step-by-step-guide-creating-pipelines">Step-by-Step Guide to Pipelines</a>\
+<strong>Fix:</strong> Build a mock pipeline with real-world stages and test filtering by value and source.</p>
+<h4 id="4-roi-tracking">4. ROI Tracking</h4>
+<p><strong>Resource:</strong> <a href="https://help.gohighlevel.com/support/solutions/articles/48001219997-understanding-attribution-source-ad-reporting-">Understanding Attribution Source</a>\
+<strong>Fix:</strong> Practice using the attribution report tab and building UTM-tagged funnels.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.top", "navigation.expand", "toc.integrate", "search.suggest", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
